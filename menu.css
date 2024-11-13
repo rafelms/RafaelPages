@@ -1,0 +1,38 @@
+body {
+    background-color:black;
+}
+h1, h3{
+    color: white;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    color: white;
+    border-collapse: collapse;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+td, th{
+    color:white;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px;
+    background-color: #333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+th{
+    background-color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: white; 
+  }
+
+  tr:hover {
+    background-color: whitesmoke; 
+  }
