@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333131;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 3rem;
+    font-family:'Lucida Sans Regular';
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eeeeee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+th {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans';
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    font-family: 'Segoe UI';
+}
+
+td input, td select, td textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+td textarea {
+    resize: none;
+    height: 60px;
+}
+
+td button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #218838;
+}
+
+.required-label {
+    color: red;
+    font-weight: bold;
+}
+
+.confirmation {
+    margin-top: 20px;
+    color: green;
+    font-size: 1.2rem;
+    display: none; /* Inicialmente escondido */
+}
+title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

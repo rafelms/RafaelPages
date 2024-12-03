@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Matrícula - Colégio São Menezes de Santana</title>
+    <link rel="stylesheet" href="mat.css">
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const confirmationMessage = document.querySelector('.confirmation');
+            confirmationMessage.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>COLÉGIO SÃO MENEZES DE SANTANA</h1>
+    <form onsubmit="submitForm(event)">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Ficha de Matrícula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome do Estudante: <span class="required-label">*</span></td>
+                    <td><input type="text" name="nome_estudante" required></td>
+                </tr>
+                <tr>
+                    <td>Nome da Mãe: <span class="required-label">*</span></td>
+                    <td><input type="text" name="nome_mae" required></td>
+                </tr>
+                <tr>
+                    <td>Nome do Pai:</td>
+                    <td><input type="text" name="nome_pai"></td>
+                </tr>
+                <tr>
+                    <td>Telefone da Mãe:</td>
+                    <td><input type="tel" name="telefone_mae"></td>
+                </tr>
+                <tr>
+                    <td>Telefone do Pai:</td>
+                    <td><input type="tel" name="telefone_pai"></td>
+                </tr>
+                <tr>
+                    <td>Data de Nascimento:</td>
+                    <td><input type="date" name="data_nascimento"></td>
+                </tr>
+                <tr>
+                    <td>CPF do Estudante: <span class="required-label">*</span></td>
+                    <td><input type="text" name="cpf_estudante" required></td>
+                </tr>
+                <tr>
+                    <td>Série: <span class="required-label">*</span></td>
+                    <td>
+                        <select name="serie" required>
+                            <option value="">Selecione...</option>
+                            <option value="1">1ª Série</option>
+                            <option value="2">2ª Série</option>
+                            <option value="3">3ª Série</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Turno: <span class="required-label">*</span></td>
+                    <td>
+                        <select name="turno" required>
+                            <option value="">Selecione...</option>
+                            <option value="matutino">Matutino</option>
+                            <option value="vespertino">Vespertino</option>
+                            <option value="noturno">Noturno</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Turma: <span class="required-label">*</span></td>
+                    <td><input type="text" name="turma" required></td>
+                </tr>
+                <tr>
+                    <td>Colégio de Origem:</td>
+                    <td><textarea name="colegio_origem"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Enviar Matrícula</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="confirmation">Matrícula enviada com sucesso!</div>
+</body>
+</html>
